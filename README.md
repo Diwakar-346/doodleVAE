@@ -35,15 +35,15 @@ The training pipeline supports configurable hyperparameters (e.g. latent dimensi
 
 <p align="right">(<a href="#readme-top">Back Top</a>)</p>
 
-### Built With
+<!-- ### Built With -->
 
-* [![Python][python]][python-url]
-* [![PyTorch][pytorch]][pytorch-url]
-* [![Numpy][numpy]][numpy-url]
-* [![Matplotlib][matplotlib]][matplotlib-url]
-* [![openCV][opencv]][opencv-url]
+<!-- * [![Python][python]][python-url] -->
+<!-- * [![PyTorch][pytorch]][pytorch-url] -->
+<!-- * [![Numpy][numpy]][numpy-url] -->
+<!-- * [![Matplotlib][matplotlib]][matplotlib-url] -->
+<!-- * [![openCV][opencv]][opencv-url] -->
 
-<p align="right">(<a href="#readme-top">Back Top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">Back Top</a>)</p> -->
 
 ## Getting Started
 
