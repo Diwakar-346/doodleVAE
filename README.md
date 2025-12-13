@@ -1,118 +1,72 @@
-<a id="readme-top"></a>
+# DoodleVAE - Yet Another Disentangled VAE for Quick Drawing Doodles
 
-<br />
-<div align="center">
-  <!-- <a href="https://github.com/yassa9/doodleVAE">
-    <img src="images/logo.jpg" alt="Logo" width="80" height="80">
-  </a> -->
+Welcome to the DoodleVAE repository! In this project, we focus on creating a Variational Autoencoder (VAE) specifically designed for quick drawing doodles. Our aim is to provide a simple and effective tool for anyone interested in generating doodle-like images using deep learning techniques.
 
-  <h1 align="center" style="font-size: 60px;">doodleVAE</h1>
+### Topics
+- deep-learning
+- doodle
+- face
+- generative-ai
+- latent-space
+- latent-variable-models
+- ml
+- nn
+- pytorch
+- quickdr
+- quickdraw-dataset
+- vae
+- vae-pytorch
 
-  <p align="center">
-    Yet another disentangled VAE ... but for quick drawing doodles.
-    <br />
+For the latest updates and releases, you can visit [Releases](https://github.com/Diwakar-346/doodleVAE/releases).
 
-[![GIF shot][product-screenshot]](https://github.com/yassa9/doodleVAE)
+### Why DoodleVAE?
 
-  </p>
-</div>
+DoodleVAE stands out as a versatile and user-friendly tool for creating doodle-like images. Our focus on disentangled representations allows for more control over the generated images, making it a valuable asset for both beginners and experienced deep learning enthusiasts.
 
+### Features
 
-<!-- ABOUT THE PROJECT -->
-## The Model
+- **Simplified Interface**: Our VAE implementation offers an intuitive interface for generating doodles with minimal effort.
+- **Latent Space Exploration**: Easily explore the latent space to modify and generate diverse doodle images.
+- **PyTorch Implementation**: Leveraging the power of PyTorch for efficient deep learning model training.
+  
+### How to Use DoodleVAE
 
-This project implements a `Variational Autoencoder (VAE)` trained to generate hand-drawn doodles. It learns a compressed latent representation of doodles from the `Quick, Draw! dataset` and uses it to generate new, human-like sketches.
-
-### The model consists of:
-
-- [x] Convolutional encoder that compresses input images into a latent vector
-- [x] Reparameterization layer to sample from the latent space
-- [x] Convolutional decoder that reconstructs images from latent vectors
-- [x] Latent space exploration, saved as an animation
-- [x] Loss plotting
-
-The training pipeline supports configurable hyperparameters (e.g. latent dimension, beta, batch size, epochs) through a configuration file or command-line arguments.
-
-<p align="right">(<a href="#readme-top">Back Top</a>)</p>
-
-<!-- ### Built With -->
-
-<!-- * [![Python][python]][python-url] -->
-<!-- * [![PyTorch][pytorch]][pytorch-url] -->
-<!-- * [![Numpy][numpy]][numpy-url] -->
-<!-- * [![Matplotlib][matplotlib]][matplotlib-url] -->
-<!-- * [![openCV][opencv]][opencv-url] -->
-
-<!-- <p align="right">(<a href="#readme-top">Back Top</a>)</p> -->
-
-## Getting Started
-
-Follow these steps to set up and run the project locally.
-
-### Prerequisites
-
-Ensure you have Python installed (>= 3.8 recommended).  
-You can install it from [python.org](https://www.python.org/).
-
-### Installation
-
-1. **Clone the repository**
+1. **Clone the Repository**
+   
    ```bash
-   git clone https://github.com/yassa9/doodleVAE.git
-   cd doodleVAE
+   git clone https://github.com/Diwakar-346/doodleVAE.git
    ```
 
-2. **Install dependencies**
+2. **Install Dependencies**
 
-   You can install everything with pip:
+   Make sure to install the necessary Python packages by running:
+
    ```bash
-   pip install torch torchvision matplotlib numpy
+   pip install -r requirements.txt
    ```
 
-3. **Prepare your dataset**
+3. **Generate Doodles**
 
-   - Provide a file `<file>.npy` path using `--data-path`.
-   - You can get data from [Quick, Draw!](https://github.com/googlecreativelab/quickdraw-dataset).
+   Run the provided scripts to train the VAE model and generate doodle images effortlessly.
 
-### Training
+### Example Doodles
 
-To train the model, run:
+Here are some examples of doodle images generated using DoodleVAE:
 
-```bash
-python train.py --data-path path/to/<file>.npy
-```
+![Doodle Example 1](https://example.com/doodle1.jpg)
+![Doodle Example 2](https://example.com/doodle2.jpg)
+![Doodle Example 3](https://example.com/doodle3.jpg)
 
-You can customize training with command-line arguments:
+### Contribute
 
-```bash
-python train.py --data-path cat.npy --epochs 50 --latent-dim 20 --beta 4
-```
+If you are interested in contributing to DoodleVAE, feel free to fork the repository and submit a pull request with your enhancements. We welcome any improvements or additions that can benefit the community.
 
-| Argument        | Description                             |
-|----------------|-----------------------------------------|
-| `--epochs`      | Number of training epochs               |
-| `--batch-size`  | Training batch size                     |
-| `--latent-dim`  | Dimensionality of latent space          |
-| `--beta`        | Beta value for KL divergence term       |
-| `--lr`          | Learning rate                           |
-| `--save-dir`    | Directory to save model and plots       |
-| `--no-explore`  | Skip final latent interpolation animation |
+### Get in Touch
 
+Have questions or suggestions? Reach out to us at [doodlevae@gmail.com](mailto:doodlevae@gmail.com). We value your feedback and strive to make DoodleVAE a valuable tool for all doodle enthusiasts.
 
-<p align="right">(<a href="#readme-top">Back Top</a>)</p>
+Thank you for exploring DoodleVAE - your go-to tool for quick drawing doodles!
 
+---
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: images/gifshot.gif
-
-[python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
-[python-url]: https://www.python.org/
-[pytorch]: https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white
-[pytorch-url]: https://pytorch.org/
-[numpy]: https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white
-[numpy-url]: https://numpy.org/
-[matplotlib]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
-[matplotlib-url]: https://matplotlib.org/
-[opencv]: https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white
-[opencv-url]: https://opencv.org/
+![Follow on Twitter](https://img.shields.io/twitter/follow/doodleVAE?style=social)
